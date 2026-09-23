@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Fiche — CineNova</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="topbar"><a class="brand" href="index.html">Cine<span>Nova</span></a><nav><a href="index.html">Accueil</a><a href="recherche.html">Recherche</a></nav></header>
+<main class="section"><div id="film"></div></main><footer>© <span id="year"></span> CineNova</footer>
+<script src="script.js"></script><script>
+const id=Number(new URLSearchParams(location.search).get("id")); const m=movies.find(x=>x.id===id)||movies[0];
+document.title=m.title+" — CineNova";
+document.querySelector("#film").innerHTML=`<div class="spotlight" style="margin:0;display:grid;grid-template-columns:minmax(180px,280px) 1fr;gap:35px;align-items:center"><img class="poster" src="${m.poster}" alt="Affiche de ${m.title}" style="border-radius:14px"><div><span class="eyebrow">${m.genre.toUpperCase()}</span><h1 style="font-size:clamp(42px,7vw,75px)">${m.title}</h1><p class="meta">${m.year} · ★ ${m.rating}</p><p style="color:var(--muted);line-height:1.8">${m.description}</p><a class="btn primary" href="${m.watch}" onclick="return handleWatch(event,'${m.title}')">▶ Regarder</a></div></div>`;
+document.querySelector("#year").textContent=new Date().getFullYear();
+</script></body></html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recherche — CineNova</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">Cine<span>Nova</span></a>
+  <nav><a href="index.html#accueil">Accueil</a><a href="index.html#catalogue">Catalogue</a></nav>
+  <a class="search-mini active" href="recherche.html">⌕ <span>Recherche</span></a>
+</header>
+<main class="search-page">
+  <section class="search-hero">
+    <span class="eyebrow">CINENOVA SEARCH</span>
+    <h1>Trouve ton prochain film.</h1>
+    <div class="big-search"><span>⌕</span><input id="query" autofocus type="search" placeholder="Titre, genre, année..."></div>
+  </section>
+  <section class="section">
+    <div class="section-head"><h2 id="search-title">Tous les films</h2><span id="count"></span></div>
+    <div id="results" class="movie-grid"></div>
+    <div id="empty" class="empty" hidden>Aucun résultat. Essaie un autre titre ou un autre genre.</div>
+  </section>
+</main>
+<footer>© <span id="year"></span> CineNova · Projet personnel</footer>
+<script src="script.js"></script>
+<script>initSearchPage();</script>
+</body>
+</html>

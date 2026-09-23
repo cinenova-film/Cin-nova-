@@ -1,42 +1,10 @@
-# 🎬 CineNova
+# CineNova Pro
 
-Bienvenue sur **CineNova**, une plateforme web de découverte de films.
+## Installation
+Copie tous les fichiers et le dossier `posters` à la racine de ton dépôt GitHub Pages.
 
-## ✨ Fonctionnalités
+## Ajouter un film
+Dans `script.js`, ajoute un objet dans `movies`.
 
-- 🏠 Page d'accueil moderne
-- 🎬 Catalogue de films
-- 🗂️ Films classés par catégories
-- 🔎 Recherche de films
-- 📄 Fiches détaillées
-- ▶️ Bouton « Regarder »
-- 📱 Compatible avec les téléphones et ordinateurs
-- 🖼️ Affiches de films
-
-## 🚀 Technologies utilisées
-
-- HTML
-- CSS
-- JavaScript
-- GitHub Pages
-
-## 📁 Structure du projet
-
-- `index.html` — page d'accueil
-- `recherche.html` — page de recherche
-- `film.html` — fiches des films
-- `style.css` — design du site
-- `script.js` — fonctionnalités JavaScript
-- `posters/` — affiches des films
-
-## 🎥 Ajouter un film
-
-Les films peuvent être ajoutés dans le fichier `script.js`.
-
-## 🌐 Site
-
-CineNova est publié avec GitHub Pages.
-
----
-
-© 2026 CineNova
+## Bouton Regarder
+Chaque film possède `watch`. Remplace `"#"` par une URL de visionnage légale (par exemple une page officielle, une plateforme que tu gères, ou une bande-annonce).
