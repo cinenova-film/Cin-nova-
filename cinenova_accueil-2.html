@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CinéNova — Films</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#0b0b0f;color:#fff}
+header{background:linear-gradient(90deg,#11111a,#191923);padding:22px 6%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
+.logo{font-size:25px;font-weight:800;color:#e50914}
+nav a{color:#ddd;text-decoration:none;margin-left:20px}
+.hero{min-height:380px;padding:70px 6%;display:flex;align-items:center;background:linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,.25)),linear-gradient(135deg,#35121b,#171725 55%,#09090c)}
+.hero h1{font-size:48px;margin-bottom:15px}
+.hero p{max-width:550px;color:#ccc;line-height:1.6;margin-bottom:25px}
+.btn{display:inline-block;background:#e50914;color:white;padding:12px 20px;border-radius:7px;text-decoration:none;font-weight:bold}
+.container{padding:35px 6%}
+.title{font-size:28px;margin-bottom:22px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{background:#17171e;border-radius:10px;overflow:hidden;transition:.2s}
+.card:hover{transform:translateY(-5px)}
+.poster{height:250px;display:flex;align-items:center;justify-content:center;font-size:27px;font-weight:bold;text-align:center;padding:15px;background:linear-gradient(135deg,#5b1d35,#1d284e)}
+.card:nth-child(2) .poster{background:linear-gradient(135deg,#143d4d,#0e172c)}
+.card:nth-child(3) .poster{background:linear-gradient(135deg,#523c15,#24170d)}
+.card:nth-child(4) .poster{background:linear-gradient(135deg,#31205b,#161229)}
+.card:nth-child(5) .poster{background:linear-gradient(135deg,#164d35,#0b1e18)}
+.card:nth-child(6) .poster{background:linear-gradient(135deg,#552020,#191010)}
+.card:nth-child(7) .poster{background:linear-gradient(135deg,#16445c,#11182a)}
+.card:nth-child(8) .poster{background:linear-gradient(135deg,#514018,#21190c)}
+.card:nth-child(9) .poster{background:linear-gradient(135deg,#3e1e50,#171021)}
+.card:nth-child(10) .poster{background:linear-gradient(135deg,#164d4c,#0d2020)}
+.card:nth-child(11) .poster{background:linear-gradient(135deg,#4c1831,#1d0e16)}
+.card:nth-child(12) .poster{background:linear-gradient(135deg,#3b4219,#17190b)}
+.info{padding:16px}
+.info h3{margin-bottom:7px}
+.meta{color:#999;font-size:13px;margin-bottom:12px}
+.info p{color:#bbb;font-size:14px;line-height:1.4;margin-bottom:15px}
+footer{text-align:center;color:#777;padding:35px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:650px){nav{display:none}.hero h1{font-size:35px}.grid{grid-template-columns:repeat(2,1fr)}.poster{height:210px}}
+@media(max-width:400px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">CinéNova</div>
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#films">Films</a>
+    <a href="#categories">Catégories</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Bienvenue sur CinéNova</h1>
+    <p>Découvre notre sélection de films fictifs : action, aventure, science-fiction, comédie et drame.</p>
+    <a class="btn" href="#films">Découvrir les films</a>
+  </div>
+</section>
+
+<main class="container" id="films">
+  <h2 class="title">🎬 Films populaires</h2>
+  <div class="grid">
+
+    <article class="card"><div class="poster">L'OMBRE DU DÉSERT</div><div class="info"><h3>L'Ombre du Désert</h3><div class="meta">Action • 2026 • 2h05</div><p>Un jeune héros découvre un secret enfoui dans le désert.</p><a class="btn" href="#">Voir le film</a></div></article>
+
+    <article class="card"><div class="poster">MISSION MINUIT</div><div class="info"><h3>Mission Minuit</h3><div class="meta">Thriller • 2026 • 1h52</div><p>Une mission mystérieuse commence quelques minutes avant minuit.</p><a class="btn" href="#">Voir le film</a></div></article>
+
+    <article class="card"><div class="poster">LE DERNIER MATCH</div><div class="info"><h3>Le Dernier Match</h3><div class="meta">Sport • 2026 • 1h48</div><p>Une équipe doit surmonter ses différences pour gagner.</p><a class="btn" href="#">Voir le film</a></div></article>
+
+    <article class="card"><div class="poster">PLANÈTE OMEGA</div><div class="info"><h3>Planète Omega</h3><div class="meta">Science-fiction • 2026 • 2h18</div><p>Un équipage découvre une planète que personne ne connaissait.</p><a class="btn" href="#">Voir le film</a></div></article>
+
+    <article class="card"><div class="poster">LE GRAND VOYAGE</div><div class="info"><h3>Le Grand Voyage</h3><div class="meta">Aventure • 2026 • 2h01</div><p>Trois amis partent à la recherche d'un trésor oublié.</p><a class="btn" href="#">Voir le film</a></div></article>
+
+    <article class="card"><div class="poster">APRÈS LA PLUIE</div><div class="info"><h3>Après la Pluie</h3><div class="meta">Drame • 2026 • 1h55</div><p>Une famille tente de reconstruire sa vie après une épreuve.</p><a class="btn" href="#">Voir le film</a></div></article>
+
+    <article class="card"><div class="poster">CODE 17</div><div class="info"><h3>Code 17</h3><div class="meta">Mystère • 2026 • 1h59</div><p>Un message codé entraîne un étudiant dans une aventure inattendue.</p><a class="btn" href="#">Voir le film</a></div></article>
+
+    <article class="card"><div class="poster">FOUS RIRES</div><div class="info"><h3>Fous Rires</h3><div class="meta">Comédie • 2026 • 1h37</div><p>Deux amis se retrouvent dans la situation la plus improbable.</p><a class="btn" href="#">Voir le film</a></div></article>
+
+    <article class="card"><div class="poster">LA VILLE SECRÈTE</div><div class="info"><h3>La Ville Secrète</h3><div class="meta">Aventure • 2026 • 2h10</div><p>Une ville invisible apparaît sur une ancienne carte.</p><a class="btn" href="#">Voir le film</a></div></article>
+
+    <article class="card"><div class="poster">HORIZON</div><div class="info"><h3>Horizon</h3><div class="meta">Science-fiction • 2026 • 2h12</div><p>Un signal venu de l'espace change le destin de l'humanité.</p><a class="btn" href="#">Voir le film</a></div></article>
+
+    <article class="card"><div class="poster">LE SECRET DE MAYA</div><div class="info"><h3>Le Secret de Maya</h3><div class="meta">Mystère • 2026 • 1h46</div><p>Maya découvre une vérité cachée dans sa propre maison.</p><a class="btn" href="#">Voir le film</a></div></article>
+
+    <article class="card"><div class="poster">NOUVEAU DÉPART</div><div class="info"><h3>Nouveau Départ</h3><div class="meta">Drame • 2026 • 1h50</div><p>Un jeune homme décide de repartir de zéro pour réaliser son rêve.</p><a class="btn" href="#">Voir le film</a></div></article>
+
+  </div>
+</main>
+
+<footer>© 2026 CinéNova — Site de démonstration avec films fictifs.</footer>
+</body>
+</html>
